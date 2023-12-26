@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+   /*font-family: 'PT Sans', sans-serif;*/
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1110px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+#Primary_nav{
+    margin-top: 13px;
+}
+#Primary_nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#Primary_nav ul li a{
+    color: #353535;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 200%; /* 30px */
+padding: 5px 28px;
+display: inline-block;
+transition: .5s;
+position: relative;
+}
+#Primary_nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #353535;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+}
+#Primary_nav ul li:hover a::after{
+    width: 100%;
+    left: 0;
+}
+
+
+#personal_data .profile{
+    width: 50%;
+}
+#personal_data .profile #identity{
+  padding-top: 141px;
+}
+#personal_data .profile #identity p{
+    color: #353535;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#personal_data .profile #identity h1{
+color: #353535;
+font-family: PT Sans;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 36px ;
+}
+#personal_data #profile_pic{
+    width: 50%;
+}
+#personal_data .profile #talk{
+    padding-top: 80px;
+    display: flex;
+}
+#personal_data .profile #talk p{
+    padding-right: 40px;
+}
+#personal_data .profile #talk p a{
+width: 209px;
+height: 69px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #FC0;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+border: none;
+
+}
+
+#personal_data .profile #talk  a{
+    width: 209px;
+    height: 69px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #000;
+    color: #353535;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+#personal_data .profile #social_link{
+display: flex;
+padding-top: 65px;
+color: #353535;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+
+}
+#personal_data .profile #social_link ul li{
+    padding-left: 16px;
+
+}
+
+.container #mouse{
+   display: block; 
+   margin: auto;
+}
